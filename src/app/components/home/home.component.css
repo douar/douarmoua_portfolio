@@ -1,28 +1,53 @@
-.nav-container{
-  background: #5c6b28;
+.container{
+  width: 100%;
+  height: 100vh;
+}
+
+.nav-container {
+  background-color: #5c6b28;
+  width: 100%;
   height: 3.5rem;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  position: sticky;
-  top: 0;
-  font-size: 1.25rem;
+  /*position: sticky;*/
+  /*top: 0;*/
 }
 
-a{
+.nav-container a{
+  font-size: 1.25rem;
   color: white;
   text-decoration: none;
 }
 
-a:hover{
+.nav-container a:hover{
   padding: .5rem;
   border-radius: .5rem;
   background-color: white;
   color: #da9432;
 }
 
+.section-container{
+  width: 100%;
+  height: 100%;
+}
+
 .row{
+  border: solid black thin;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+}
+
+.col{
+
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.col div{
+  margin: 3rem;
 }
