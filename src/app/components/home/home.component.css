@@ -4,7 +4,7 @@
 }
 
 .nav-container {
-  background-color: #5c6b28;
+  background-color: #6D709C;
   width: 100%;
   height: 3.5rem;
   display: flex;
@@ -23,17 +23,19 @@
 .nav-container a:hover{
   padding: .5rem;
   border-radius: .5rem;
-  background-color: white;
-  color: #da9432;
+  color: #CFD1D5;
 }
 
 .section-container{
   width: 100%;
   height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1673187446875-d3149449953b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .row{
-  border: solid black thin;
   width: 100%;
   height: 100%;
   display: flex;
@@ -52,7 +54,15 @@
 }
 
 mat-expansion-panel{
-  background-color: #da9432;
+  background-color: white;
+}
+
+.welcome-content{
+  padding: 5rem;
+}
+
+.content{
+  padding-right: 5rem;
 }
 
 .welcome-content p{
@@ -65,4 +75,9 @@ mat-expansion-panel{
 
 .content mat-expansion-panel{
   margin: 1rem;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
 }
