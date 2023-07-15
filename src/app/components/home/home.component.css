@@ -41,7 +41,6 @@
 }
 
 .col{
-
   width: 50%;
   height: 100%;
   display: flex;
@@ -50,4 +49,20 @@
 
 .col div{
   margin: 3rem;
+}
+
+mat-expansion-panel{
+  background-color: #da9432;
+}
+
+.welcome-content p{
+  font-size: large;
+}
+
+.welcome-content h1{
+  font-size: xxx-large;
+}
+
+.content mat-expansion-panel{
+  margin: 1rem;
 }
