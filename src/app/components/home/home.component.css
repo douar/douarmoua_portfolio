@@ -1,5 +1,4 @@
 .content-container{
-  border: black solid thin;
   width: 100%;
   height: 100vh;
 }
@@ -52,12 +51,8 @@
 
 mat-expansion-panel{
   margin: 1rem;
-  position: unset;
 }
 
-mat-expansion-panel-header{
-  position: unset;
-}
 
 iframe{
   height: 100%;
