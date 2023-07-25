@@ -1,14 +1,22 @@
 <div class="nav-container">
-  <span><a href="#about">Douar Moua</a></span>
-  <span><a href="#resume">Resume</a></span>
-  <span><a href="#projects">Projects</a></span>
-  <span><a href="#connect">Connect</a></span>
+  <span><a href="#about" class="nav-link">Douar Moua</a></span>
+  <span><a href="#projects" class="nav-link">Projects</a></span>
+  <span><a href="#resume" class="nav-link">Resume</a></span>
+  <span><a href="#connect" class="nav-link">Connect</a></span>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-icon-button-for-menu">
+    <mat-icon style="color: white">more_vert</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu" id="menu">
+    <button mat-menu-item><a href="#about" class="nav-link">About</a></button>
+    <button mat-menu-item><a href="#projects" class="nav-link">Projects</a></button>
+    <button mat-menu-item><a href="#resume" class="nav-link">Resume</a></button>
+    <button mat-menu-item><a href="#connect" class="nav-link">Connect</a></button>
+  </mat-menu>
 </div>
 
 <div class="content-container">
-
   <div class="section-container" id="about">
-    <div class="row">
+    <div class="bg-row">
       <div class="col">
         <p style="font-size: large">Hi, my name is</p>
         <h1 style="font-size: xxx-large">Douar Moua</h1>
@@ -54,7 +62,7 @@
             <a href="https://www.discprofile.com/what-is-disc/disc-styles/steadiness" target="_blank">Style S</a>
           </p>
           <p>
-            I am a proactive developer dedicated to continously improving my work. My belief is to build products
+            I am a proactive developer dedicated to continuously improving my work. My belief is to build products
             that can deliver long-term value and allow itself to be innovated upon in response to changing needs. With a background
             in business and marketing, I am able to understand business values and how to achieve them, making me
             a valuable member that can help identify, guide, and execute necessary work.
@@ -77,22 +85,88 @@
         </mat-expansion-panel>
       </div>
     </div>
-  </div>
+    <div class="sm-row">
+      <div style="background-image: linear-gradient(#6D709C, lavender); padding: 1rem; border-radius: 5px; margin-bottom: 1rem">
+        <p style="font-size: large">Hi, my name is</p>
+        <h1 style="font-size: xxx-large">Douar Moua</h1>
+        <p style="font-size: large">I'm a fullstack developer who enjoys creating web applications</p>
+      </div>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>My Journey</mat-expansion-panel-header>
+        <div class="expansion-content">
+          <p>
+            As immigrants my parents were determined to make ends meet with their own effort and skills, so they have always been entrepreneurs.
+            This lead me to pursue a degree in
+            <a href="https://www.cehd.umn.edu/olpd/undergraduate-programs/business-marketing-education/" target="_blank">Business & Marketing Education</a>
+            and being the first in my family to achieve higher education.
+            After graduating I became more involved with the family business,
+            but I always felt like I was missing something. <br><br>
+            In 2022, I finally took the courage to stray from my family's work to pursue my own interest, leading me to programming.
+            I joined <a href="https://yorksolutions.net/talent/b2e" target="_blank">York Solutions intensive Barrier to Entry (B2E)</a> program,
+            learned how to develop web applications, and gained valuable experience in my first dev role at Optum.
+            Today I continue to grow my passion for developing user friendly software applications.
+          </p>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>Tech Favorites</mat-expansion-panel-header>
+        <div class="expansion-content">
+          <ul>
+            <li>Javascript/Typescript</li>
+            <li>Java</li>
+            <li>Angular</li>
+            <li>Springboot</li>
+            <li>Postman</li>
+            <li>Hasura</li>
+            <li>Camunda</li>
+            <li>Beyond Compare</li>
+            <li>IntelliJ IDEA</li>
+          </ul>
+        </div>
+      </mat-expansion-panel>
+      <mat-expansion-panel hideToggle>
+        <mat-expansion-panel-header>Work With Me</mat-expansion-panel-header>
+        <div class="expansion-content">
+          <p>See my <a href="#resume">Resume</a></p>
+          <p>See my <a href="#projects">Projects</a></p>
+          <p>
+            DiSC Profile:
+            <a href="https://www.discprofile.com/what-is-disc/disc-styles/conscientiousness" target="_blank">Style C</a> /
+            <a href="https://www.discprofile.com/what-is-disc/disc-styles/steadiness" target="_blank">Style S</a>
+          </p>
+          <p>
+            I am a proactive developer dedicated to improving my work. My belief is to build products
+            that can deliver long-term value and allow itself to be innovated upon in response to changing needs. With a background
+            in business and marketing, I am able to understand business values and how to achieve them, making me
+            a valuable member that can help identify, guide, and execute necessary work.
+          </p>
+          <p style="font-weight: bold">
+            Sound like I could be a good fit for your team?
+            <a href="#connect">Let's connect!</a>
+          </p>
+        </div>
 
+      </mat-expansion-panel>
+      <div>
+
+      </div>
+    </div>
+  </div>
   <div class="section-container" id="projects" style="display: flex; flex-direction: column">
-    <h1 style="text-transform: uppercase">Projects : More Coming Soon</h1>
-    <h2>Take a peek at the projects I'm working on</h2>
-    <a href="https://github.com/douar" target="_blank">github.com/douar</a>
-    <br>
-    <ul>
-      <li><a href="https://douar.github.io/douarmoua_portfolio/" target="_blank">Portfolio</a> | <a href="https://github.com/douar/douarmoua_portfolio" target="_blank">Git Repository</a></li>
-    </ul>
+    <div style="text-align: center; margin: 1rem; background-image: linear-gradient(#6D709C, lavender); padding: 1rem; border-radius: 5px;">
+      <h1 style="text-transform: uppercase">Projects : More Coming Soon</h1>
+      <h2>Take a peek at the projects I'm working on</h2>
+      <a href="https://github.com/douar" target="_blank">github.com/douar</a>
+    </div>
+    <div style="text-align: center">
+      <ul>
+        <li><a href="https://douar.github.io/douarmoua_portfolio/" target="_blank">Portfolio</a> | <a href="https://github.com/douar/douarmoua_portfolio" target="_blank">Git Repository</a></li>
+      </ul>
+    </div>
   </div>
-
   <div class="section-container" id="resume">
     <iframe src="assets/DouarMoua_Resume.pdf" ></iframe>
   </div>
-
   <div class="section-container" id="connect">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSRC7gCFjlZiH0omHC7IW80-U9fMrL4NuRhG4NaXolV28IRA/viewform?embedded=true"
             width="640"
@@ -101,5 +175,4 @@
             marginheight="0"
             marginwidth="0">Loading…</iframe>
   </div>
-
 </div>
