@@ -1,17 +1,17 @@
 <div class="nav-container">
-  <span><a href="#about">Douar Moua</a></span>
-  <span><a href="#resume">Resume</a></span>
-  <span><a href="#projects">Projects</a></span>
-  <span><a href="#connect">Connect</a></span>
+  <span><a href="#about" class="nav-link">Douar Moua</a></span>
+  <span><a href="#resume" class="nav-link">Resume</a></span>
+  <span><a href="#projects" class="nav-link">Projects</a></span>
+  <span><a href="#connect" class="nav-link">Connect</a></span>
 
   <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu-icon-button-for-menu">
     <mat-icon style="color: white">more_vert</mat-icon>
   </button>
-  <mat-menu #menu="matMenu">
-    <button mat-menu-item><a href="#about">Home</a></button>
-    <button mat-menu-item><a href="#resume">Resume</a></button>
-    <button mat-menu-item><a href="#projects">Projects</a></button>
-    <button mat-menu-item><a href="#connect">Connect</a></button>
+  <mat-menu #menu="matMenu" id="menu">
+    <button mat-menu-item><a href="#about" class="nav-link">Home</a></button>
+    <button mat-menu-item><a href="#resume" class="nav-link">Resume</a></button>
+    <button mat-menu-item><a href="#projects" class="nav-link">Projects</a></button>
+    <button mat-menu-item><a href="#connect" class="nav-link">Connect</a></button>
   </mat-menu>
 </div>
 

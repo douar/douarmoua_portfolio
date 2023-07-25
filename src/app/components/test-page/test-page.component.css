@@ -14,7 +14,7 @@
   top: 0;
 }
 
-.nav-container a{
+.nav-container a.nav-link{
   font-size: 120%;
   color: white;
   text-decoration: none;
