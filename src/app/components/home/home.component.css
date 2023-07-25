@@ -75,7 +75,7 @@ iframe{
   overflow: auto;
 }
 
-@Media (min-width: 400px){
+@Media (min-width: 600px){
   .nav-container button{
     display: none;
   }
@@ -84,7 +84,7 @@ iframe{
   }
 }
 
-@Media (max-width: 400px){
+@Media (max-width: 600px){
   .nav-container span{
     display: none;
   }
