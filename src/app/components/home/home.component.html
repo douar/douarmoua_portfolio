@@ -17,7 +17,7 @@
 <div class="content-container">
   <div class="section-container" id="about">
     <div class="bg-row">
-      <div class="col">
+      <div class="col" id="hi">
         <p style="font-size: large">Hi, my name is</p>
         <h1 style="font-size: xxx-large">Douar Moua</h1>
         <p style="font-size: large">I'm a fullstack developer who enjoys creating web applications</p>
@@ -152,16 +152,39 @@
       </div>
     </div>
   </div>
-  <div class="section-container" id="projects" style="display: flex; flex-direction: column">
-    <div style="text-align: center; margin: 1rem; background-image: linear-gradient(#6D709C, lavender); padding: 1rem; border-radius: 5px;">
-      <h1 style="text-transform: uppercase">Projects : More Coming Soon</h1>
-      <h2>Take a peek at the projects I'm working on</h2>
-      <a href="https://github.com/douar" target="_blank">github.com/douar</a>
+  <div class="section-container" id="projects">
+    <div class="project-container" id="bored-api">
+      <div class="project-img">
+        <a href="https://douar.github.io/api-apps/" target="_blank"><img src="assets/bored-api.png" alt="User interface for bored api"></a>
+      </div>
+      <div class="project-info">
+        <h1><a href="https://douar.github.io/api-apps/" target="_blank">Bored API User Interface</a></h1>
+        <p><span class="bold">Status: </span>Complete V1</p>
+        <p><span class="bold"><a href="https://github.com/douar/api-apps/tree/bored-api" target="_blank">Git Repository</a></span></p>
+        <p>User Interface created for <a href="https://www.boredapi.com/" target="_blank">Bored API</a>. Generates random activity suggestions based on conditions/requirements.</p>
+        <p>Utilizes HTTP service to make requests to the API.</p>
+        <span class="pill">Angular</span>
+        <span class="pill">Bootstrap</span>
+        <span class="pill">HTML</span>
+        <span class="pill">Typescript</span>
+        <span class="pill">CSS</span>
+      </div>
     </div>
-    <div style="text-align: center">
-      <ul>
-        <li><a href="https://douar.github.io/douarmoua_portfolio/" target="_blank">Portfolio</a> | <a href="https://github.com/douar/douarmoua_portfolio" target="_blank">Git Repository</a></li>
-      </ul>
+    <div class="project-container" id="portfolio">
+      <div class="project-img">
+        <a href="https://douar.github.io/douarmoua_portfolio/" target="_blank"><img src="assets/portfolio.png" alt="Portfolio site for Douar Moua"></a>
+      </div>
+      <div class="project-info">
+        <h1><a href="https://douar.github.io/douarmoua_portfolio/" target="_blank">Portfolio</a></h1>
+        <p><span class="bold">Status: </span>Complete V1</p>
+        <p><span class="bold"><a href="https://github.com/douar/douarmoua_portfolio/tree/main" target="_blank">Git Repository</a></span></p>
+        <p>Portfolio to consolidate & share projects I've worked on.</p>
+        <span class="pill">Angular</span>
+        <span class="pill">Bootstrap</span>
+        <span class="pill">HTML</span>
+        <span class="pill">Typescript</span>
+        <span class="pill">CSS</span>
+      </div>
     </div>
   </div>
   <div class="section-container" id="resume">
