@@ -15,9 +15,7 @@ describe('AppComponent', () => {
         AboutMeComponent
       ],
     }).compileComponents();
-  });
 
-  beforeEach(() => {
     fixture = TestBed.createComponent(AppComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -32,8 +30,11 @@ describe('AppComponent', () => {
   });
 
   it('should render the app-container (ContainerComponent)', () => {
+    // Arrange & Act
     const compiled = fixture.nativeElement;
     const appContainerElement = compiled.querySelector('app-container');
+
+    // Act
     expect(appContainerElement).toBeTruthy(); // Check if app-container exists in the template
   });
 });
